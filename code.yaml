@@ -1,0 +1,11 @@
+pool:
+    vmImage:'Build-Latest'
+stages :
+    stage:'Build'
+        jobs:
+            job:'Build Job'
+                tasks:
+                    input:
+                        MavenVersion:'Maven@3'
+                        MavenPomXml:'pom.xml'
+                        MavenArtifact:'Artifact'
